@@ -1,5 +1,5 @@
 import Navbar from '@/components/navbar'
-import UpperNavbar from '@/components/UpperNavbar'
+import UpperNavbar from '@/components/Uppernavbar'
 import React from 'react'
 
 function page() {
