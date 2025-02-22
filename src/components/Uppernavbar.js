@@ -9,7 +9,7 @@ const UpperNavbar = () => {
         <div className="flex items-center gap-2">
           <span role="img" aria-label="phone">📱</span>
           <span className="font-semibold">24x7 Support:</span>
-          <span>9999317846, 87569</span>
+          <span>9773764427, 9312288985</span>
         </div>
         
         {/* Right Side - Social Media Icons */}

@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md border-b border-yellow-500">
+    <nav className="bg-white shadow-md border-b-4 border-yellow-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -45,7 +45,7 @@ const Navbar = () => {
 const NavLinks = ({ dropdown, toggleDropdown }) => {
   const menuItems = [
     { name: 'HOME', href: '/' },
-    { name: 'About', href: '/' },
+    { name: 'ABOUT', href: '/about' },
     { name: 'CAR', href: '#', submenu: ['Sedan', 'SUV', 'Luxury'] },
     { name: 'VAN', href: '#', submenu: ['Mini Van', 'Passenger Van'] },
     { name: 'Tour Packages', href: '#', submenu: ['Mini Bus', 'Luxury Bus'] },
