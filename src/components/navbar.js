@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
-              <span className="text-2xl font-bold text-black">INDIAN <span className="text-yellow-500">CAR RENTAL</span></span>
+              <span className="text-2xl font-bold text-black">YASH <span className="text-yellow-500">Tour & Travels              </span></span>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-6">
@@ -45,13 +45,14 @@ const Navbar = () => {
 const NavLinks = ({ dropdown, toggleDropdown }) => {
   const menuItems = [
     { name: 'HOME', href: '/' },
+    { name: 'About', href: '/' },
     { name: 'CAR', href: '#', submenu: ['Sedan', 'SUV', 'Luxury'] },
     { name: 'VAN', href: '#', submenu: ['Mini Van', 'Passenger Van'] },
-    { name: 'BUS', href: '#', submenu: ['Mini Bus', 'Luxury Bus'] },
-    { name: 'CITYWISE', href: '/citywise' },
-    { name: 'AIRPORT TRANSFER', href: '/airport-transfer' },
-    { name: 'SELF DRIVE CARS', href: '/self-drive-cars' },
-    { name: 'PAY NOW', href: '/pay-now' },
+    { name: 'Tour Packages', href: '#', submenu: ['Mini Bus', 'Luxury Bus'] },
+    // { name: 'CITYWISE', href: '/citywise' },
+    // { name: 'AIRPORT TRANSFER', href: '/airport-transfer' },
+    // { name: 'SELF DRIVE CARS', href: '/self-drive-cars' },
+    // { name: 'PAY NOW', href: '/pay-now' },
     { name: 'CONTACT US', href: '/contact' }
   ];
 
