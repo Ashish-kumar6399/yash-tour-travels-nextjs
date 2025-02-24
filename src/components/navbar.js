@@ -47,7 +47,7 @@ const NavLinks = ({ dropdown, toggleDropdown }) => {
     { name: 'HOME', href: '/' },
     { name: 'ABOUT', href: '/about' },
     { name: 'CAR', href: '#', submenu: ['Sedan', 'SUV', 'Luxury'] },
-    { name: 'VAN', href: '#', submenu: ['Mini Van', 'Passenger Van'] },
+    { name: 'Bus', href: '#', submenu: ['Mini Van', 'Passenger Van'] },
     { name: 'Tour Packages', href: '#', submenu: ['Mini Bus', 'Luxury Bus'] },
     // { name: 'CITYWISE', href: '/citywise' },
     // { name: 'AIRPORT TRANSFER', href: '/airport-transfer' },
