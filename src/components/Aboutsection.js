@@ -5,14 +5,13 @@ import { FaPlay } from "react-icons/fa";
 
 export default function AboutSection() {
   return (
-    <div className=" py-12 px-4">
+    <div className=" py-12 px-4 lg:px-24">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <h1 className="text-black font-bold text-2xl mb-4">
-            Welcome To Yash Tour & Travels
+          <h1 className="text-black font-bold text-2xl mb-4"> Yash Tour & Travels
           </h1>
-          <p className="text-gray-700 mb-4 text-justify">
+          <h6 className="text-gray-700 mb-4 text-justify text-lg">
             Welcome to Yash Tour & Travels, your trusted partner for
             comfortable, reliable, and affordable journeys. Discover the joy of
             travel with our premium rental services across India.every journey
@@ -21,8 +20,8 @@ export default function AboutSection() {
             comfortable, reliable, and affordable travel solutions. Our mission
             is to make your voyages across India's diverse landscapes as
             seamless and enjoyable as possible.
-          </p>
-          <p className="text-gray-700 mb-6 text-justify">
+          </h6>
+          <p className="text-gray-700 mb-6 text-justify text-lg">
             Our fleet, a symphony of modernity and convenience, is meticulously
             maintained to ensure your safety and comfort. From the sleek sedans
             that glide through cityscapes to the robust SUVs ready for off-road
@@ -42,17 +41,12 @@ export default function AboutSection() {
         {/* Right Image with Play Button */}
         <div className="relative">
           <img
-            src="https://www.worshipholidays.com/img/Cards-img/kullu-manali-cab.png" // Replace with your image path
+            src="https://wallpaperaccess.com/full/1547040.jpg" // Replace with your image path
             alt="Video Thumbnail"
             width={600}
             height={400}
-            className="w-full h-auto"
+            className="w-full h-96 rounded"
           />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button className="bg-red-600 text-white p-4 rounded-full shadow-lg">
-              <FaPlay size={24} />
-            </button>
-          </div>
         </div>
       </div>
     </div>

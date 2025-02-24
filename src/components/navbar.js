@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md border-b-4 border-yellow-500">
+    <nav className="bg-white shadow-md border-b-4 border-yellow-500 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -60,7 +60,7 @@ const NavLinks = ({ dropdown, toggleDropdown }) => {
     <>
       {menuItems.map((item, index) => (
         <div key={index} className="relative">
-          <Link 
+          <Link
             href={item.href}
             className="text-black hover:text-yellow-500 font-medium flex items-center"
             onClick={() => item.submenu && toggleDropdown(item.name)}
@@ -68,7 +68,7 @@ const NavLinks = ({ dropdown, toggleDropdown }) => {
             {item.name} {item.submenu && <ChevronDown size={16} className="ml-1" />}
           </Link>
           {item.submenu && dropdown === item.name && (
-            <div className="absolute left-0 mt-2 w-40 bg-white shadow-md border border-yellow-500 rounded-md">
+            <div className="absolute left-0 mt-2 w-40 bg-white shadow-md border border-yellow-500 rounded-md z-50">
               {item.submenu.map((subItem, subIndex) => (
                 <Link key={subIndex} href="#" className="block px-4 py-2 text-black hover:bg-yellow-100">
                   {subItem}

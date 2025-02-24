@@ -44,9 +44,9 @@ export default function CarRentalCarousel() {
               alt="Car 1"
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-1/3 left-16 text-white text-xl font-semibold">
+            {/* <div className="absolute top-1/3 left-16 text-white text-xl font-semibold">
               Book Now
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
