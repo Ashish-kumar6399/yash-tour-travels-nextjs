@@ -37,6 +37,70 @@ export default function CarRentalCarousel() {
         modules={[Autoplay, Pagination, Navigation]}
         className="w-full"
       >
+       
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://www.carscoops.com/wp-content/uploads/2021/01/Mercedes-S-Class-1.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://th.bing.com/th/id/R.4ea54f75ad8b5f75c3a1c6e95b149fcd?rik=5qb%2fdM97yDvFVg&riu=http%3a%2f%2fwww.hdcarwallpapers.com%2fwalls%2f2015_mercedes_benz_cls-HD.jpg&ehk=Ek4F0Kr1Np%2b0KEoUz1pjqwrf2DurpxM8rKZYmw8Ifn8%3d&risl=&pid=ImgRaw&r=0"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://s2.paultan.org/image/2013/09/BMW_i8_022.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://hillsimages.s3-accelerate.amazonaws.com/2020/10/IMG_5587.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://www.indiancarrental.com/uploads/slider/1709389030.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://image.made-in-china.com/2f0j00UEPRLgWGztqr/2017-New-Passenger-Bus-with-Luxury-VIP-Bus-Seat-Slk6126-.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://www.minivanhiredelhi.com/uploads/24964_slider2.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
           <div className="relative h-[30vh] md:h-[50vh] lg:h-[75vh]">
             <img

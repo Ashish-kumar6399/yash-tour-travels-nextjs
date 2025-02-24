@@ -4,19 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 const busData = [
-  {
-    name: "VOLVO BUSES",
-    image: "https://www.indiancarrental.com/uploads/carrent/32424_1696941040.jpg",
-    link: "volvo-bus.html",
-  },
+    {
+        name: "LARGE SIZE LUXURY COACHES",
+        image: "https://www.indiancarrental.com/uploads/carrent/1697033179.jpg",
+        link: "volvo-bus.html",
+      },
   {
     name: "MERCEDES BENZ BUSES",
     image: "https://www.indiancarrental.com/uploads/carrent/1697033425.jpg",
     link: "volvo-bus.html",
   },
   {
-    name: "LARGE SIZE LUXURY COACHES",
-    image: "https://www.indiancarrental.com/uploads/carrent/1697033179.jpg",
+    name: "VOLVO BUSES",
+    image: "https://www.indiancarrental.com/uploads/carrent/32424_1696941040.jpg",
     link: "volvo-bus.html",
   },
   {

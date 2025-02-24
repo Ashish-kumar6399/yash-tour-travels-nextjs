@@ -1,7 +1,5 @@
-"use client";
+import Link from 'next/link';
 
-import Image from "next/image";
-import { FaPlay } from "react-icons/fa";
 
 export default function AboutSection() {
   return (
@@ -9,7 +7,7 @@ export default function AboutSection() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <h1 className="text-black font-bold text-2xl mb-4"> Yash Tour & Travels
+          <h1 className="text-black font-bold text-4xl mb-4"> Yash Tour & Travels
           </h1>
           <h6 className="text-gray-700 mb-4 text-justify text-lg">
             Welcome to Yash Tour & Travels, your trusted partner for
@@ -20,32 +18,26 @@ export default function AboutSection() {
             comfortable, reliable, and affordable travel solutions. Our mission
             is to make your voyages across India's diverse landscapes as
             seamless and enjoyable as possible.
-          </h6>
-          <p className="text-gray-700 mb-6 text-justify text-lg">
             Our fleet, a symphony of modernity and convenience, is meticulously
-            maintained to ensure your safety and comfort. From the sleek sedans
-            that glide through cityscapes to the robust SUVs ready for off-road
-            adventures, we have a vehicle for every traveler's need. For larger
-            groups, our tempo travelers, vans, and buses offer spacious
-            interiors and modern amenities, ensuring everyone travels in
-            comfort.
-          </p>
-          <a
-            href="#"
-            className="uppercase font-bold text-gray-800 hover:text-gray-600"
+            maintained to ensure your safety and comfort. 
+          </h6>
+         
+          <Link
+            href="/about"
+            className="uppercase font-bold text-gray-800 hover:text-gray-600 px-5 text-lg"
           >
-            Read More
-          </a>
+            Read More...
+          </Link>
         </div>
 
         {/* Right Image with Play Button */}
         <div className="relative">
           <img
-            src="https://wallpaperaccess.com/full/1547040.jpg" // Replace with your image path
+            src="https://th.bing.com/th/id/R.4ea54f75ad8b5f75c3a1c6e95b149fcd?rik=5qb%2fdM97yDvFVg&riu=http%3a%2f%2fwww.hdcarwallpapers.com%2fwalls%2f2015_mercedes_benz_cls-HD.jpg&ehk=Ek4F0Kr1Np%2b0KEoUz1pjqwrf2DurpxM8rKZYmw8Ifn8%3d&risl=&pid=ImgRaw&r=0" // Replace with your image path
             alt="Video Thumbnail"
             width={600}
             height={400}
-            className="w-full h-96 rounded"
+            className="w-full h-48 lg:h-96 rounded"
           />
         </div>
       </div>
