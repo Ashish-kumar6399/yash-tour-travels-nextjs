@@ -4,7 +4,7 @@ const UpperNavbar = () => {
     return (
       <div className="">
   
-      <div className="  bg-black text-white text-sm flex justify-between items-center  px-6 lg:px-20  py-2">
+      <div className="  bg-primary text-white text-sm flex justify-between items-center  px-6 lg:px-20  py-2">
         {/* Left Side - Support Info */}
         <div className="flex items-center gap-2">
           <span role="img" aria-label="phone">📱</span>

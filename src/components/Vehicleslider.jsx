@@ -3,12 +3,13 @@
 const vehicleData = [
     {
         name: "SEDAN CARS FLEET",
-        image: "https://www.indiancarrental.com/uploads/carrent/1696482201.jpg",
+        image: "https://www.indiancarrental.com/uploads/carrent/1696427287.jpeg",
         vehicles: ["Toyota camry", "BMW 5 series", "Mercedes BenZ C Class", "Skoda solvia", "Mercedes E250"]
     },
     {
         name: "BMW CARS FLEET",
-        image: "https://www.indiancarrental.com/uploads/carrent/1696427287.jpeg",
+        image: "https://www.indiancarrental.com/uploads/carrent/1696482201.jpg",
+
         vehicles: ["BMW 7 Series", "BMW 5 Series", "BMW X5", "BMW X7", "BMW 6GT"]
     },
     {
@@ -41,7 +42,7 @@ export default function VehicleShowcase() {
                             height={250}
                             className="w-full h-auto"
                         />
-                        <div className="bg-yellow-500 text-black text-start px-3 py-2 font-bold text-lg">
+                        <div className="bg-primary text-white text-start px-3 py-2 font-bold text-lg">
                             {vehicle.name}
                         </div>
                         <div className="p-2 text-gray-700">
@@ -52,7 +53,7 @@ export default function VehicleShowcase() {
                             </ul>
                         </div>
                         <div className="p-2 text-center">
-                            <button className="bg-yellow-500 text-black font-semibold py-2 px-4 rounded flex items-center ">
+                            <button className="bg-primary text-white font-semibold py-2 px-4 rounded flex items-center ">
                                 Read More ➜
                             </button>
                         </div>

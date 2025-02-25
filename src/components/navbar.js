@@ -13,13 +13,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md border-b-4 border-yellow-500">
+    <nav className="bg-white shadow-md border-b-4 sticky  z-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
               <span className="text-2xl font-bold text-black">
-                YASH <span className="text-yellow-500">Tour & Travels</span>
+                YASH <span className="text-lightpink">Tour & Travels</span>
               </span>
             </Link>
           </div>

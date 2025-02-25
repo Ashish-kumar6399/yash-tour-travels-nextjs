@@ -10,6 +10,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#32064A",
+        orange :"#e66a1f",
+        lightpink:"#e42a69",
       },
     },
   },

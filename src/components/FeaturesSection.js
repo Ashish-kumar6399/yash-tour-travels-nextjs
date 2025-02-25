@@ -1,7 +1,7 @@
 export default function FeaturesSection() {
     return (
         <>
-      <div className="bg-[#1a140a] text-white py-6 px-4">
+      <div className="bg-lightpink text-white py-6 px-4">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           
           {/* 24 Hours Available */}

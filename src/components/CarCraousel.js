@@ -124,8 +124,8 @@ export default function CarRentalCarousel() {
         </SwiperSlide>
       </Swiper>
 
-      <div className="  hidden lg:block absolute top-80  md:top-16 md:right-10 bg-black p-4 text-white w-full md:w-96 z-40">
-        <h3 className="text-lg font-bold border-b-2 border-yellow-500 pb-2 mb-4">
+      <div className="  hidden lg:block absolute top-80  md:top-16 md:right-10 bg-black p-4 text-white w-full md:w-96 z-40 rounded">
+        <h3 className="text-lg font-bold border-b-2 border-orange pb-2 mb-4">
           CONTACT US NOW
         </h3>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -165,7 +165,7 @@ export default function CarRentalCarousel() {
           />
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-black p-2 font-bold"
+            className="w-full bg-orange text-white text-lg p-2 font-bold"
           >
             SEND
           </button>
