@@ -1,87 +1,91 @@
-'use client';
+"use client";
+import React from "react";
+import { Breadcrumb } from "flowbite-react";
 
-import { useState } from 'react';
+const aboutSections = [
+  "Journeys. Discover the joy of travel with our premium rental services across India. Every journey is a promise of memories that last a lifetime. As your premier travel companion, we are dedicated to providing you with comfortable, reliable, and affordable travel solutions. Our mission is to make your voyages across India's diverse landscapes as seamless and enjoyable as possible.",
+  "Our fleet, a symphony of modernity and convenience, is meticulously maintained to ensure your safety and comfort. From the sleek sedans that glide through cityscapes to the robust SUVs ready for off-road adventures, we have a vehicle for every traveler’s need. For larger groups, our tempo travelers, vans, and buses offer spacious interiors and modern amenities, ensuring everyone travels in comfort.",
+  "We understand that travel is not just about destinations; it's about the experiences along the way. That's why we offer personalized tour packages that cater to your unique interests. Whether it's the historical allure of the Taj Mahal, the spiritual serenity of Varanasi, or the picturesque beauty of the Himalayas, our packages are designed to give you an immersive experience.",
+  "Our services extend beyond just rentals. We provide 24/7 customer support to assist you at every step of your journey. Our experienced drivers are not just chauffeurs but your guides, well-versed in the local culture and geography, ready to take you through the heart of India.",
+  "At Car Coach Rental India, we believe in sustainable travel. We are committed to eco-friendly practices, ensuring that our operations contribute positively to the environment. We encourage our travelers to join us in this endeavor, making responsible choices that preserve the beauty of our destinations.",
+  "Booking with us is a breeze. Our user-friendly website and dedicated customer service team make it easy for you to plan your trip, select your vehicle, and customize your itinerary. We offer transparent pricing with no hidden costs, so you can travel with peace of mind, knowing that you're getting the best value for your money.",
+  "Our commitment to excellence has earned us the trust of countless travelers, families, corporate clients, and tourists from around the world. Their testimonials speak volumes about their satisfying experiences and the bonds we've built over the years.",
+];
+
+const formFields = [
+  { type: "text", placeholder: "Name Please" },
+  { type: "text", placeholder: "Phone No" },
+  { type: "email", placeholder: "Email ID" },
+  { type: "text", placeholder: "Country Name" },
+  // { type: "date", placeholder: "From Date" },
+  { type: "date", placeholder: "To Date" },
+  { type: "number", placeholder: "Number of Persons" },
+];
 
 const AboutUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    country: '',
-    fromDate: '',
-    toDate: '',
-    persons: '',
-    itinerary: '',
-    validation: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
-
   return (
-    <div className="bg-white">
+    <div className="text-black">
       {/* Breadcrumb Section */}
-      <div className="bg-black text-white py-3 px-5 text-sm">
-        <span>HOME / ABOUT US</span>
+      <div className="container mx-auto px-4 py-4">
+        <Breadcrumb aria-label="Breadcrumb Navigation">
+          <Breadcrumb.Item href="/" className="text-gray-400 hover:text-white">
+            HOME
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>ABOUT US</Breadcrumb.Item>
+        </Breadcrumb>
       </div>
 
-      {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {/* About Us Title */}
-        <div className="text-center">
-          <h2 className="text-3xl font-bold">ABOUT US</h2>
-          <div className="w-16 h-1 bg-black mx-auto mt-2"></div>
-        </div>
-
-        {/* Content Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-          {/* Left Side - About Text */}
-          <div className="md:col-span-2 text-gray-700 space-y-4 text-justify">
-            <p>
-              The journey with Indian Car Rental is more than just a RIDE – it's an EXPERIENCE. 
-              That's why we go above and beyond to deliver exceptional service every single time. 
-              Experience luxury, convenience, and style with the highest-rated Indian Car Rental Chauffeur Driven Services.
-            </p>
-            <p>
-              Indian Car Rental makes available Luxury Car, Imported Van, Volvo, Mercedes, Bharat Benz, 
-              Isuzu & Tata super luxury buses, rental requirements in Delhi, Mumbai, Goa, Pune, Bengaluru, 
-              Hyderabad, Kochi, Chennai, Ahmedabad, and across Pan India with highly professional uniform drivers.
-            </p>
-            <p>
-              Indian Car Rental provides Local and Outstation Car, Cab, Taxi, Van, Traveller, Mini Bus, 
-              Large Coaches for Personal, Corporate, Wedding, Business Events, Weekend Trips, 
-              Holiday Travel Packages, and Airport Transfers (Pick-up and Drop Facility).
-            </p>
-            <p>
-              Each journey with us is tailored to your individual preferences, ensuring an unparalleled 
-              level of service that anticipates and exceeds your expectations.
-            </p>
+      {/* Main Layout Container */}
+      <div className="bg-white text-black py-10">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-8">
+          {/* Left Section - About Us Text */}
+          <div className="lg:w-2/3">
+            <h2 className="text-2xl font-bold border-b-2 border-black pb-2 mb-4">
+              ABOUT US
+            </h2>
+            {aboutSections.map((text, index) => (
+              <p key={index} className="text-gray-700 mb-4 text-justify">
+                {text}
+              </p>
+            ))}
           </div>
 
-          {/* Right Side - Contact Form */}
-          <div className="bg-black p-6 text-white rounded-md">
-            <h3 className="text-lg font-bold mb-4">CONTACT US NOW</h3>
-            <form onSubmit={handleSubmit} className="space-y-3">
-              <input type="text" name="name" placeholder="Name Please" onChange={handleChange} className="w-full p-2 text-black rounded-md" />
-              <input type="text" name="phone" placeholder="Phone No" onChange={handleChange} className="w-full p-2 text-black rounded-md" />
-              <input type="email" name="email" placeholder="Email ID" onChange={handleChange} className="w-full p-2 text-black rounded-md" />
-              <input type="text" name="country" placeholder="Country Name" onChange={handleChange} className="w-full p-2 text-black rounded-md" />
-              <div className="grid grid-cols-2 gap-2">
-                <input type="date" name="fromDate" onChange={handleChange} className="p-2 text-black rounded-md w-full" />
-                <input type="date" name="toDate" onChange={handleChange} className="p-2 text-black rounded-md w-full" />
+          {/* Right Section - Contact Us Form */}
+          <div className="lg:w-1/3 bg-black text-white p-6 rounded-md shadow-lg">
+            <h3 className="text-lg font-bold border-b pb-2 mb-4">
+              CONTACT US NOW
+            </h3>
+            <form className="space-y-3">
+              {formFields.map((field, index) => (
+                <input
+                  key={index}
+                  type={field.type}
+                  placeholder={field.placeholder}
+                  className="w-full px-3 py-2 border rounded-md bg-white text-black"
+                />
+              ))}
+              <textarea
+                placeholder="Tour Itinerary"
+                className="w-full px-3 py-2 border rounded-md bg-white text-black h-20"
+              ></textarea>
+              <input
+                type="text"
+                placeholder="Enter Validation"
+                className="w-full px-3 py-2 border rounded-md bg-white text-black"
+              />
+
+              {/* Captcha & Button */}
+              <div className="flex items-center justify-between">
+                <input
+                  type="text"
+                  value="248"
+                  className="w-16 px-3 py-2 border rounded-md bg-white text-black text-center"
+                  disabled
+                />
+                <button className="w-full bg-orange text-black font-bold py-2 rounded-md hover:bg-yellow-600 ml-2">
+                  SEND
+                </button>
               </div>
-              <input type="number" name="persons" placeholder="Number of Persons" onChange={handleChange} className="w-full p-2 text-black rounded-md" />
-              <textarea name="itinerary" placeholder="Tour Itinerary" onChange={handleChange} className="w-full p-2 text-black rounded-md h-24"></textarea>
-              <input type="text" name="validation" placeholder="Enter Validation" onChange={handleChange} className="w-full p-2 text-black rounded-md" />
-              <button type="submit" className="w-full bg-yellow-500 text-black font-bold py-2 rounded-md hover:bg-yellow-600">
-                SEND
-              </button>
             </form>
           </div>
         </div>
