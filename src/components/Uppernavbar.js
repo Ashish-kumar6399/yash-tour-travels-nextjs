@@ -1,8 +1,9 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import Navbar from "./navbar";
 
 const UpperNavbar = () => {
     return (
-      <div className="">
+      <div className="sticky top-0 z-50">
   
       <div className="  bg-primary text-white text-sm flex justify-between items-center  px-6 lg:px-20  py-2">
         {/* Left Side - Support Info */}
@@ -28,6 +29,7 @@ const UpperNavbar = () => {
           </a>
         </div>
       </div>
+      <Navbar/>
       </div>
     );
   };
