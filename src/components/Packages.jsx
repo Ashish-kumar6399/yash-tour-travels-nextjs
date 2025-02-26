@@ -43,13 +43,13 @@ const TourPackagesSection = () => {
 
               {/* Buttons Section */}
               <div className="flex justify-between items-center mt-4">
-                <button className="px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-800">
+                <button className="  px-2 md:px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-800">
                   BOOK NOW
                 </button>
-                <button className="px-4 py-2 bg-orange text-white text-sm rounded-md hover:bg-orange-700">
+                <button className=" px-2 md:px-4 py-2 bg-orange text-white text-sm rounded-md hover:bg-orange-700">
                   DETAIL
                 </button>
-                <button className=" px-0 lg:px-4 py-2 bg-green-500 text-white text-sm rounded-md flex items-center gap-1 hover:bg-green-700">
+                <button className="  px-2 md:px-4 lg:px-4 py-2 bg-green-500 text-white text-sm rounded-md flex items-center gap-1 hover:bg-green-700">
                   <span>WhatsApp</span>
                 </button>
               </div>

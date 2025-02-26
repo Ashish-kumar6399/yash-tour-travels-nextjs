@@ -64,7 +64,7 @@ const NavLinks = ({ dropdown, toggleDropdown }) => {
       ] 
     },
     { 
-      name: 'Tour Packages', href: '#', 
+      name: 'Tour Packages', href: '/tour-packages', 
       submenu: [
         { name: 'Mini Bus', href: '/tour/mini-bus' },
         { name: 'Luxury Bus', href: '/tour/luxury-bus' }
