@@ -1,9 +1,9 @@
 import { FaAngleDoubleRight } from "react-icons/fa";
 
 const quickLinks = [
-  { name: "Home", link: "#" },
-  { name: "About Us", link: "#" },
-  { name: "Contact Us", link: "#" },
+  { name: "Home", link: "/" },
+  { name: "About Us", link: "about" },
+  { name: "Contact Us", link: "contact-us" },
   { name: "Terms & Conditions", link: "#" },
   { name: "Privacy Policy", link: "#" },
 ];
@@ -11,11 +11,12 @@ const quickLinks = [
 const services = [
   { name: "Cars", link: "/" },
   { name: "Bus", link: "/" },
+    { name: "Golden Triangle Tour", link: "golden-triangle" },
+
   { name: "Kashmir Tour", link: "#" },
   { name: "Gangtok Tour", link: "#" },
   { name: "Andaman Tour", link: "#" },
   // { name: "Kerala Tour", link: "#" },
-  // { name: "Golden Triangle Tour", link: "#" },
 ];
 
 const contacts = [
@@ -31,7 +32,7 @@ const contacts = [
   },
   {
     type: "email",
-    value: "yashtourandtravels1@gmail.com",
+    value: "yashtourandtravels1@gmail.com  ",
     link: "mailto:yashtourandtravels1@gmail.com",
   },
 ];

@@ -1,4 +1,4 @@
- "use client";
+"use client";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Thumbs } from "swiper/modules";
@@ -6,44 +6,46 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumbs from "@/components/Breadcrumb";
 
-export default function CarRental( ) {
-    const [formData, setFormData] = useState({
-      name: "",
-      phone: "",
-      email: "",
-      country: "",
-      fromDate: "",
-      toDate: "",
-      persons: "",
-      itinerary: "",
-      validation: "",
-    });
-  
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  
-    const handleChange = (e) => {
-      setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-  
-    const images = [
-      "https://www.indiancarrental.com/uploads/carrent/91562_1696397972.jpeg",
-      "https://www.indiancarrental.com/uploads/carrent/2007_1696397972.jpeg",
-      "https://www.indiancarrental.com/uploads/carrent/53095_1696397972.jpeg",
-      "https://www.indiancarrental.com/uploads/carrent/96737_1696397972.jpeg",
-      "https://www.indiancarrental.com/uploads/carrent/2007_1696397972.jpeg",
-      "https://www.indiancarrental.com/uploads/carrent/54777_1696397972.jpeg",
-    ];
-  
-    return (
-        <>
-            {/* <Breadcrumb/> */}
+export default function CarRental() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    country: "",
+    fromDate: "",
+    toDate: "",
+    persons: "",
+    itinerary: "",
+    validation: "",
+  });
+
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const images = [
+    "https://www.indiancarrental.com/uploads/carrent/21937_1696429021.jpg",
+    "https://www.indiancarrental.com/uploads/carrent/57586_1696429021.jpeg",
+    "https://www.indiancarrental.com/uploads/carrent/13507_1696429021.jpeg",
+    "https://www.indiancarrental.com/uploads/carrent/28339_1696429021.jpg",
+    "https://www.indiancarrental.com/uploads/carrent/13341_1696429021.webp",
+    "https://www.indiancarrental.com/uploads/carrent/54777_1696397972.jpeg",
+  ];
+
+  return (
+    <>
+      {/* <Breadcrumb/> */}
+      <Breadcrumbs/>
 
       <div className="conatiner mx-auto px-2 lg:px-24 p-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Section */}
-        
+
         <div className="lg:col-span-2 space-y-4">
-            <h1 className="text-2xl text-center font-bold mt-4 underline">SEDAN CARS</h1>
+          <h1 className="text-2xl text-center font-bold mt-4 ">BMW 7 Series</h1>
           {/* Main Slider */}
           <Swiper
             spaceBetween={10}
@@ -65,7 +67,7 @@ export default function CarRental( ) {
               </SwiperSlide>
             ))}
           </Swiper>
-  
+
           {/* Thumbnail Slider */}
           <Swiper
             onSwiper={setThumbsSwiper}
@@ -86,23 +88,10 @@ export default function CarRental( ) {
               </SwiperSlide>
             ))}
           </Swiper>
-  
+
           <h2 className="text-xl font-bold">INTRODUCTION</h2>
           <p className="text-gray-700">
-            lorem*1
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
-            velit et tristique dictum, lectus arcu convallis ligula, at vestibulum
+            BMW 7 Series car hire in India with well trained uniform drivers. We offer world-class brands BMW 7 Series luxury car rental service in Delhi, Mumbai, Bengaluru and Hyderabad with great comfort, safety features. Choose from our prestigious collection of super luxury BMW 7 Series car on rent can be done for Leisure Trips, VIP Meetings & Conventions, Business Travel, Wedding, Corporate Meeting, Video Shoots, Celebrity and Outstation Trip. Indian Car Rental provides a BMW luxury car online booking in Delhi, Gurugram, Noida, Agra, Jaipur, Chennai, Goa, Pune, Kochi all major cities in india on economical price. You can book BMW 7 Series car in India for Local Packages and Outstation Trips for family holidays vacation, corporate trip, individual tours, airport pickup and drop include comfortable seats, seat belts and the latest audio system
           </p>
           <div className="bg-gray-100 p-4 rounded-lg grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="flex items-center gap-2"><span>🚗</span> 4 passengers + 1 driver</div>
@@ -113,7 +102,7 @@ export default function CarRental( ) {
             <div className="flex items-center gap-2"><span>🎬</span> Television</div>
           </div>
         </div>
-  
+
         {/* Right Section - Contact Form */}
         <div className="bg-black text-white p-6 rounded-lg">
           <h3 className="text-xl font-bold mb-4">CONTACT US NOW</h3>
@@ -130,7 +119,6 @@ export default function CarRental( ) {
           </form>
         </div>
       </div>
-      </>
-    );
-  }
-  
+    </>
+  );
+}

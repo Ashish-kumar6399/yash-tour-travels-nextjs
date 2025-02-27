@@ -51,9 +51,11 @@ const NavLinks = ({ dropdown, toggleDropdown }) => {
     { 
       name: 'CAR', href: '#', 
       submenu: [
-        { name: 'Sedan', href: '/car/sedan' },
-        { name: 'SUV', href: '/car/suv' },
-        { name: 'Luxury', href: '/car/luxury' }
+        { name: 'BMW CARS FLEET', href: '/bmw-cars' },
+        { name: 'SEDAN  CARS FLEET', href: '/car/sedan' },
+        { name: 'Luxury CARS FLEEET', href: '/car/luxury' },
+        { name: 'TOYOTA CARS FLEEET', href: '/car/luxury' },
+        { name: 'SUV AND MUV VECHILE FLEEET', href: '/car/luxury' }
       ] 
     },
     { 
@@ -66,11 +68,13 @@ const NavLinks = ({ dropdown, toggleDropdown }) => {
     { 
       name: 'Tour Packages', href: '/tour-packages', 
       submenu: [
-        { name: 'Mini Bus', href: '/tour/mini-bus' },
-        { name: 'Luxury Bus', href: '/tour/luxury-bus' }
+        { name: 'Golden Traingle  Tours', href: '/golden-triangle' },
+        { name: 'Kashmir Tour', href: '/tour/luxury-bus' },
+        { name: 'Gangtok Darjeeling Tour', href: '/tour/luxury-bus' },
+        { name: 'Andaman Tour', href: '/tour/luxury-bus' },
       ] 
     },
-    { name: 'CONTACT US', href: '/contact' }
+    { name: 'CONTACT US', href: '/contact-us' }
   ];
 
   return (

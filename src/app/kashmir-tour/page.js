@@ -1,4 +1,6 @@
 "use client";
+import Breadcrumbs from "@/components/Breadcrumb";
+import Travelpackgesslider from "@/components/tourpackages/Tourpackagesslider";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,46 +27,89 @@ const itinerary = [
   },
 ];
 
+const inclusions = [
+  "3 Nights Accommodation in Manali",
+  "3 Morning Tea, Breakfast & Dinner",
+  "Pick up & Drop ex. – Delhi",
+  "Hot & Cold Water 24 Hours",
+  "All Toll, parking charges, driver charges, fuel cost inclusive.",
+  "All Transfers & Sightseeing by AC Sedan Cab",
+];
+
+const exclusions = [
+  "AC Will Not Work In Hill Area",
+  "Air Fare / Train fare",
+  "Personal Expenses",
+  "Entrance Fees & Guide charges. Insurance",
+  "Any increase in taxes or fuel price leading to increased costs",
+  "05 % On Advance Payment",
+];
+
 export default function KashmirTour() {
   return (
-    <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-      {/* Itinerary Section */}
-      <div className="md:col-span-2">
-        <h2 className="text-3xl font-bold">Kashmir Tour <span className="text-gray-500">🕒 4N/5D</span></h2>
-        <h3 className="text-xl font-semibold mt-2">
-          Destination Covered: <span className="font-bold">Srinagar - Gulmarg - Pahalgam - Sonamarg</span>
-        </h3>
-        {itinerary.map((item, index) => (
-          <div key={index} className="mt-6 border-4 border-primary p-4 rounded-md">
-            <h4 className="bg-orange-200 px-4 py-2 font-bold text-orange text-xl rounded-t-md">
-              {item.day}
-            </h4>
-            <p className="text-gray-700 mt-2">{item.description}</p>
+    <>
+    
+      <Travelpackgesslider />
+      <Breadcrumbs/>
+      <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Itinerary Section */}
+        <div className="md:col-span-2">
+          <h2 className=" text-xl lg:text-3xl font-bold text-lightpink">Kashmir Tour <span className="text-gray-500">🕒 4N/5D</span></h2>
+          <h3 className="text-xl font-semibold mt-2">
+            Destination Covered: <span className="font-bold">Srinagar - Gulmarg - Pahalgam - Sonamarg</span>
+          </h3>
+          {itinerary.map((item, index) => (
+            <div key={index} className="mt-6 border-4 border-primary p-4 rounded-md">
+              <h4 className="bg-orange-200 px-4 py-2 font-bold text-orange text-xl rounded-t-md">
+                {item.day}
+              </h4>
+              <p className="text-gray-700 mt-2">{item.description}</p>
+            </div>
+          ))}
+
+          {/* Package Inclusions */}
+          <div className="mt-6 border-2 border-primary p-4 rounded-md">
+            <h3 className="text-xl font-bold text-blue-900 border-b-2 border-primary pb-2">PACKAGE INCLUSIONS —</h3>
+            <ul className="list-disc pl-5 mt-2 text-gray-700">
+              {inclusions.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
           </div>
-        ))}
+
+          {/* Package Exclusions */}
+          <div className="mt-6 border-2 border-primary p-4 rounded-md">
+            <h3 className="text-xl font-bold text-blue-900 border-b-2 border-primary pb-2">PACKAGE EXCLUSIONS —</h3>
+            <ul className="list-disc pl-5 mt-2 text-gray-700">
+              {exclusions.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Contact Form Section */}
+        <div className="bg-gray-300 p-6  border-4 border-primary rounded-md shadow-md">
+          <h3 className="text-2xl font-bold bg-orange text-white py-2 px-4 rounded-t-md">Contact Us</h3>
+          <form className="mt-4">
+            <input type="text" placeholder="Enter your name" className="w-full p-2 border rounded mt-2" />
+            <input type="email" placeholder="Enter your email" className="w-full p-2 border rounded mt-2" />
+            <input type="text" placeholder="Enter your mobile number" className="w-full p-2 border rounded mt-2" />
+            <textarea placeholder="Your message" className="w-full p-2 border rounded mt-2 h-24"></textarea>
+            <select className="w-full p-2 border rounded mt-2">
+              <option>Select a Package</option>
+              <option>Kashmir Tour</option>
+              <option>Gangtok Tour</option>
+              <option>Andaman Tour</option>
+              <option>Kerala Tour</option>
+              <option>Golden Triangle Tour</option>
+            </select>
+            <button className="w-full mt-4 bg-orange text-white py-2 rounded hover:bg-orange-600">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
-      
-      {/* Contact Form Section */}
-      <div className="bg-gray-300 p-6  border-4 border-primary rounded-md shadow-md">
-        <h3 className="text-2xl font-bold bg-orange text-white py-2 px-4 rounded-t-md">Contact Us</h3>
-        <form className="mt-4">
-          <input type="text" placeholder="Enter your name" className="w-full p-2 border rounded mt-2" />
-          <input type="email" placeholder="Enter your email" className="w-full p-2 border rounded mt-2" />
-          <input type="text" placeholder="Enter your mobile number" className="w-full p-2 border rounded mt-2" />
-          <textarea placeholder="Your message" className="w-full p-2 border rounded mt-2 h-24"></textarea>
-          <select className="w-full p-2 border rounded mt-2">
-            <option>Select a Package</option>
-            <option>Kashmir Tour</option>
-            <option>Gangtok Tour</option>
-            <option>Andaman Tour</option>
-            <option>Kerala Tour</option>
-            <option>Golden Triangle Tour</option>
-          </select>
-          <button className="w-full mt-4 bg-orange text-white py-2 rounded hover:bg-orange-600">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
+    </>
   );
 }

@@ -1,47 +1,48 @@
-// components/Breadcrumb.jsx
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+"use client";
 
-const Breadcrumb = () => {
-  const router = useRouter();
-  const [breadcrumbs, setBreadcrumbs] = useState([]);
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useMemo } from "react";
 
-  useEffect(() => {
-    const pathWithoutQuery = router.asPath.split('?')[0];
-    const pathSegments = pathWithoutQuery.split('/').filter((segment) => segment);
+const Breadcrumbs = () => {
+  const pathname = usePathname();
 
-    const breadcrumbPaths = pathSegments.map((segment, index) => {
-      const href = '/' + pathSegments.slice(0, index + 1).join('/');
-      return { href, label: decodeURIComponent(segment) };
+  const breadcrumbLinks = useMemo(() => {
+    const paths = pathname.split("/").filter(Boolean);
+    const links = paths.map((path, index) => {
+      const linkPath = "/" + paths.slice(0, index + 1).join("/");
+      return {
+        label: path.charAt(0).toUpperCase() + path.slice(1),
+        to: linkPath,
+      };
     });
 
-    setBreadcrumbs(breadcrumbPaths);
-  }, [router.asPath]);
+    return [{ label: "Home", to: "/" }, ...links];
+  }, [pathname]);
 
   return (
-    <nav aria-label="breadcrumb">
-      <ol className="flex space-x-2">
-        <li>
-          <Link href="/">
-            <a className="text-blue-600 hover:underline">Home</a>
-          </Link>
-        </li>
-        {breadcrumbs.map((breadcrumb, index) => (
-          <li key={breadcrumb.href} className="flex items-center">
-            <span className="mx-2">/</span>
-            {index === breadcrumbs.length - 1 ? (
-              <span className="text-gray-500">{breadcrumb.label}</span>
-            ) : (
-              <Link href={breadcrumb.href}>
-                <a className="text-blue-600 hover:underline">{breadcrumb.label}</a>
-              </Link>
+    <nav className="bg-gray-100 py-3 px-5 rounded-lg shadow-md w-fit">
+      <ul className="flex items-center text-sm text-gray-600 space-x-2">
+        {breadcrumbLinks.map((link, index) => (
+          <li key={index} className="flex items-center">
+            <Link
+              href={link.to}
+              className={`${
+                index === breadcrumbLinks.length - 1
+                  ? "text-gray-900 font-semibold"
+                  : "text-blue-600 hover:underline"
+              }`}
+            >
+              {link.label}
+            </Link>
+            {index < breadcrumbLinks.length - 1 && (
+              <span className="mx-2 text-gray-400">/</span>
             )}
           </li>
         ))}
-      </ol>
+      </ul>
     </nav>
   );
 };
 
-export default Breadcrumb;
+export default Breadcrumbs;

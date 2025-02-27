@@ -2,14 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Users, Gauge, Fuel, Briefcase, User, Tv, BatteryFull, Video } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumb';
 
 export default function Cars() {
     // Combined vehicle data with features
     const vehicles = [
         {
             id: 1,
-            name: "Maruti",
-            image: "https://www.indiancarrental.com/uploads/carrent/37446_1696414439.jpg",
+            name: "BMW-7-SERIES",
+            image: "https://www.indiancarrental.com/uploads/carrent/21937_1696429021.jpg",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat quod itaque, ad accusantium.",
             features: [
                 { icon: <Users size={14} />, tooltip: "5+1 Passengers" },
@@ -24,8 +25,8 @@ export default function Cars() {
         },
         {
             id: 2,
-            name: "Mercedes",
-            image: "https://www.indiancarrental.com/uploads/carrent/37446_1696414439.jpg",
+            name: "BMW -5 SERIES",
+            image: "https://www.indiancarrental.com/uploads/carrent/1715_1696429586.jpg",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat quod itaque, ad accusantium.",
             features: [
                 { icon: <Users size={14} />, tooltip: "4+1 Passengers" },
@@ -39,8 +40,8 @@ export default function Cars() {
             ]
         }, {
             id: 3,
-            name: "Mercedes",
-            image: "https://www.indiancarrental.com/uploads/carrent/37446_1696414439.jpg",
+            name: "BMW - X5",
+            image: "https://www.indiancarrental.com/uploads/carrent/28502_1696430005.jpg",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat quod itaque, ad accusantium.",
             features: [
                 { icon: <Users size={14} />, tooltip: "4+1 Passengers" },
@@ -54,8 +55,8 @@ export default function Cars() {
             ]
         }, {
             id: 4,
-            name: "Mercedes",
-            image: "https://www.indiancarrental.com/uploads/carrent/37446_1696414439.jpg",
+            name: "BMW - X7",
+            image: "https://www.indiancarrental.com/uploads/carrent/55366_1696430818.jpg",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat quod itaque, ad accusantium.",
             features: [
                 { icon: <Users size={14} />, tooltip: "4+1 Passengers" },
@@ -69,8 +70,8 @@ export default function Cars() {
             ]
         }, {
             id: 5,
-            name: "Mercedes",
-            image: "https://www.indiancarrental.com/uploads/carrent/37446_1696414439.jpg",
+            name: "BMW-6GT",
+            image: "https://www.indiancarrental.com/uploads/carrent/44418_1696496737.jpg",
             description: "Luxury at its best with premium interiors.",
             features: [
                 { icon: <Users size={14} />, tooltip: "4+1 Passengers" },
@@ -84,7 +85,7 @@ export default function Cars() {
             ]
         }, {
             id: 6,
-            name: "Mercedes",
+            name: "BMW -7 SERIES",
             image: "https://www.indiancarrental.com/uploads/carrent/37446_1696414439.jpg",
             description: "Luxury at its best with premium interiors.",
             features: [
@@ -109,10 +110,16 @@ export default function Cars() {
     ];
 
     return (
+        <>
+        <Breadcrumbs/>
         <div className="container mx-auto mt-4 px-4">
-            <h1 className="text-center text-dark text-3xl font-bold mb-6">Cars</h1>
+            <h1 className='text-3xl text-center   mb-6'>BMW CARS</h1>
+            <h4 className=" text-dark text-md font-bold mb-6 px-20 text-justify">
+                BMW has a rich heritage and a strong reputation for producing high-quality, reliable vehicles. Their commitment to engineering excellence and continuous innovation has made them a respected name in the automotive industry. BMW cars offer a combination of performance, driving pleasure, advanced technology, luxury, and safety. Every one of our luxury car for lease are inseparable from style, execution and extravagance. The BMW vehicles on rent can move of 2 to 5 passengers comfortably across long distances. Indian Car Rental super exotic and luxury vehicle rental service in India specializes in renting all BMW models- BMW 5 Series, BMW 7 Series, BMW X5, BMW X7, BMW 6GT with great comfort, safety features and well trained uniform drivers. Indian Car Rental is a service provider of BMW Cars that include all latest brand models in metro cities of Delhi, Mumbai, Chennai, Hyderabad, Kochi, Bengaluru and adjoining cities. Reservation of luxurious BMW car can be done for Leisure Trips, VIP Meetings & Conventions, Business Travel, Wedding, Corporate Meeting, Video Shoots, Celebrity. Online Booking of BMW luxury car is available for Airport Pick Up and Drop Service, Local Run, City Tour and Outstation Trips. The BMW Cars are available in metro cities Only. For booking in other cities BMW Luxury Cars will be sent from nearby metro cities. Charges applicable.
+
+            </h4>
             <div className="flex flex-wrap">
-                
+
                 <div className="w-full lg:w-3/4">
                     <div className="flex flex-wrap">
                         {vehicles.map((vehicle) => (
@@ -171,5 +178,6 @@ export default function Cars() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

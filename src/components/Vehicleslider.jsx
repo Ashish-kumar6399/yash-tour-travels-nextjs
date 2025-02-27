@@ -4,16 +4,16 @@ import Link from "next/link";
 
 const vehicleData = [
     {
-        name: "SEDAN CARS FLEET",
-        image: "https://www.indiancarrental.com/uploads/carrent/1696427287.jpeg",
-        vehicles: ["Toyota Camry", "BMW 5 Series", "Mercedes Benz C Class", "Skoda Slavia", "Mercedes E250"],
-        link: "/sedan-cars"
-    },
-    {
         name: "BMW CARS FLEET",
         image: "https://www.indiancarrental.com/uploads/carrent/1696482201.jpg",
         vehicles: ["BMW 7 Series", "BMW 5 Series", "BMW X5", "BMW X7", "BMW 6GT"],
         link: "/bmw-cars"
+    },
+    {
+        name: "SEDAN CARS FLEET",
+        image: "https://www.indiancarrental.com/uploads/carrent/1696427287.jpeg",
+        vehicles: ["Toyota Camry", "BMW 5 Series", "Mercedes Benz C Class", "Skoda Slavia", "Mercedes E250"],
+        link: "/sedan-cars"
     },
     {
         name: "LUXURY CARS FLEET",

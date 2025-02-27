@@ -1,4 +1,5 @@
 "use client";
+import Breadcrumbs from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,6 +35,8 @@ const tours = [
 
 export default function RajasthanGoldenTriangleTours() {
   return (
+    <>
+    <Breadcrumbs/>
     <div className="max-w-7xl mx-auto p-6 text-center">
       <h2 className="text-4xl font-bold">
         Rajasthan Golden <span className="text-orange-500">Triangle Tours</span>
@@ -61,5 +64,6 @@ export default function RajasthanGoldenTriangleTours() {
         ))}
       </div>
     </div>
+    </>
   );
 }

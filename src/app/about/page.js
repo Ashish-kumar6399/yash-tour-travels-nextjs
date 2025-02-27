@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Breadcrumb } from "flowbite-react";
+import Breadcrumbs from "@/components/Breadcrumb";
 
 const aboutSections = [
   "Journeys. Discover the joy of travel with our premium rental services across India. Every journey is a promise of memories that last a lifetime. As your premier travel companion, we are dedicated to providing you with comfortable, reliable, and affordable travel solutions. Our mission is to make your voyages across India's diverse landscapes as seamless and enjoyable as possible.",
@@ -26,14 +27,15 @@ const AboutUs = () => {
   return (
     <div className="text-black">
       {/* Breadcrumb Section */}
-      <div className="container mx-auto px-4 py-4">
+      {/* <div className="container mx-auto px-4 py-4">
         <Breadcrumb aria-label="Breadcrumb Navigation">
           <Breadcrumb.Item href="/" className="text-gray-400 hover:text-white">
             HOME
           </Breadcrumb.Item>
           <Breadcrumb.Item>ABOUT US</Breadcrumb.Item>
         </Breadcrumb>
-      </div>
+      </div> */}
+      <Breadcrumbs/>
 
       {/* Main Layout Container */}
       <div className="bg-white text-black py-10">
