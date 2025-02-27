@@ -104,9 +104,9 @@ export default function CarRental() {
         </div>
 
         {/* Right Section - Contact Form */}
-        <div className="bg-black text-white p-6 rounded-lg">
-          <h3 className="text-xl font-bold mb-4">CONTACT US NOW</h3>
-          <form className="space-y-2">
+        <div className=" text-white p-6 rounded-lg  ">
+          <h3 className="text-xl font-bold mb-4 text-black">CONTACT US NOW</h3>
+          <form className="space-y-2 border-8  border-primary bg-primary ">
             <input type="text" name="name" placeholder="Name Please" className="w-full p-2 text-black rounded" onChange={handleChange} />
             <input type="text" name="phone" placeholder="Phone No" className="w-full p-2 text-black rounded" onChange={handleChange} />
             <input type="email" name="email" placeholder="Email ID" className="w-full p-2 text-black rounded" onChange={handleChange} />
@@ -115,7 +115,7 @@ export default function CarRental() {
             <input type="number" name="persons" placeholder="Number of Persons" className="w-full p-2 text-black rounded" onChange={handleChange} />
             <textarea name="itinerary" placeholder="Tour Itinerary" className="w-full p-2 text-black rounded" onChange={handleChange}></textarea>
             <input type="text" name="validation" placeholder="Enter Validation" className="w-full p-2 text-black rounded" onChange={handleChange} />
-            <button type="submit" className="w-full bg-yellow-500 text-black font-bold p-2 rounded">SEND</button>
+            <button type="submit" className="w-full bg-lightpink text-black font-bold p-2 rounded">SEND</button>
           </form>
         </div>
       </div>

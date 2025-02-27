@@ -18,9 +18,9 @@ const UpperNavbar = () => {
           <a href="#" className="border border-white p-1 rounded-sm hover:bg-white hover:text-black transition">
             <FaFacebookF size={14} />
           </a>
-          <a href="#" className="border border-white p-1 rounded-sm hover:bg-white hover:text-black transition">
+          {/* <a href="#" className="border border-white p-1 rounded-sm hover:bg-white hover:text-black transition">
             <FaTwitter size={14} />
-          </a>
+          </a> */}
           <a href="#" className="border border-white p-1 rounded-sm hover:bg-white hover:text-black transition">
             <FaLinkedinIn size={14} />
           </a>

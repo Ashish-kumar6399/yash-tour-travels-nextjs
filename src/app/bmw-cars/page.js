@@ -114,7 +114,7 @@ export default function Cars() {
         <Breadcrumbs/>
         <div className="container mx-auto mt-4 px-4">
             <h1 className='text-3xl text-center   mb-6'>BMW CARS</h1>
-            <h4 className=" text-dark text-md font-bold mb-6 px-20 text-justify">
+            <h4 className=" text-dark text-md font-bold mb-6  px-2 lg:px-20 text-justify">
                 BMW has a rich heritage and a strong reputation for producing high-quality, reliable vehicles. Their commitment to engineering excellence and continuous innovation has made them a respected name in the automotive industry. BMW cars offer a combination of performance, driving pleasure, advanced technology, luxury, and safety. Every one of our luxury car for lease are inseparable from style, execution and extravagance. The BMW vehicles on rent can move of 2 to 5 passengers comfortably across long distances. Indian Car Rental super exotic and luxury vehicle rental service in India specializes in renting all BMW models- BMW 5 Series, BMW 7 Series, BMW X5, BMW X7, BMW 6GT with great comfort, safety features and well trained uniform drivers. Indian Car Rental is a service provider of BMW Cars that include all latest brand models in metro cities of Delhi, Mumbai, Chennai, Hyderabad, Kochi, Bengaluru and adjoining cities. Reservation of luxurious BMW car can be done for Leisure Trips, VIP Meetings & Conventions, Business Travel, Wedding, Corporate Meeting, Video Shoots, Celebrity. Online Booking of BMW luxury car is available for Airport Pick Up and Drop Service, Local Run, City Tour and Outstation Trips. The BMW Cars are available in metro cities Only. For booking in other cities BMW Luxury Cars will be sent from nearby metro cities. Charges applicable.
 
             </h4>
@@ -126,7 +126,7 @@ export default function Cars() {
                             <div key={vehicle.id} className="w-full md:w-1/2 px-2 mb-4">
                                 <Link href={`/${vehicle.name.toLowerCase().replace(/ /g, '-')}`} className="block no-underline">
                                     <div className="border-2 border-primary text-center p-3 bg-gray-100 rounded-lg hover:shadow-lg transition-shadow duration-300">
-                                        <div className="relative w-full h-96 md:h-48">
+                                        <div className="relative w-full h-52 md:h-48 lg:h-[22rem] xl:h-[20rem]">
                                             <Image src={vehicle.image} alt={vehicle.name} layout="fill" objectFit="cover" className="rounded-md" />
                                         </div>
                                         <h6 className="text-lg font-semibold mt-3">{vehicle.name}</h6>

@@ -89,7 +89,7 @@ export default function KashmirTour() {
         </div>
 
         {/* Contact Form Section */}
-        <div className="bg-gray-300 p-6  border-4 border-primary rounded-md shadow-md">
+        <div className="bg-gray-300 p-6  rounded-md shadow-md">
           <h3 className="text-2xl font-bold bg-orange text-white py-2 px-4 rounded-t-md">Contact Us</h3>
           <form className="mt-4">
             <input type="text" placeholder="Enter your name" className="w-full p-2 border rounded mt-2" />

@@ -12,17 +12,17 @@ export default function ContactUs() {
           <div className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center">
             <div className="text-3xl mb-4" style={{color: "#ec3323"}}>✉️</div>
             <h3 className="font-semibold text-lg">Email us</h3>
-            <p className="text-gray-600">yashtourandtravels1@gmail.com</p>
+            <p className="text-black-600">yashtourandtravels1@gmail.com</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center">
             <div className="text-3xl mb-4" style={{color: "#ec3323"}}>📍</div>
             <h3 className="font-semibold text-lg">Our address</h3>
-            <p className="text-gray-600">Bimal Mansion,SF-2,Second Floor,8584,Pahar Ganj,Behind,Shiela Cinema,Near St. Anthony School,New Delhi-55</p>
+            <p className="text-black-600">Bimal Mansion,SF-2,Second Floor,8584,Pahar Ganj,Behind,Shiela Cinema,Near St. Anthony School,New Delhi-55</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center">
             <div className="text-3xl mb-4" style={{color: "#ec3323"}}>⏰</div>
-            <h3 className="font-semibold text-lg">Opening Hours</h3>
-            <p className="text-gray-600">Mon-Sun: 8 AM - 7 PM</p>
+            <h3 className="font-semibold text-lg">Office Timing</h3>
+            <p className="text-balck-600">24/7</p>
           </div>
           <div className="p-6 rounded-lg shadow-lg text-center flex flex-col items-center bg-white" >
             <div className="text-black text-3xl mb-4">📞</div>
