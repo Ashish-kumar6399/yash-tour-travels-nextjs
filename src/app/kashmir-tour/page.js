@@ -95,6 +95,8 @@ export default function KashmirTour() {
             <input type="text" placeholder="Enter your name" className="w-full p-2 border rounded mt-2" />
             <input type="email" placeholder="Enter your email" className="w-full p-2 border rounded mt-2" />
             <input type="text" placeholder="Enter your mobile number" className="w-full p-2 border rounded mt-2" />
+            <input type="text" placeholder="Numbers of passenger" className="w-full p-2 border rounded mt-2" />
+            <input type="date" placeholder="Numbers of passenger" className="w-full p-2 border rounded mt-2" />
             <textarea placeholder="Your message" className="w-full p-2 border rounded mt-2 h-24"></textarea>
             <select className="w-full p-2 border rounded mt-2">
               <option>Select a Package</option>

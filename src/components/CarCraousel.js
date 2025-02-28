@@ -47,6 +47,16 @@ export default function CarRentalCarousel() {
             />
           </div>
         </SwiperSlide>
+         <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://static3.toyotabharat.com/images/showroom/innova-mmc/unmatched-unrivaled-banner1600x850.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </SwiperSlide>
+
         <SwiperSlide>
           <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
             <img
@@ -73,7 +83,17 @@ export default function CarRentalCarousel() {
               className="w-full h-full object-cover"
             />
           </div>
+        </SwiperSlide> 
+        <SwiperSlide>
+          <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
+            <img
+              src="https://wallpapercave.com/wp/wp6586790.jpg"
+              alt="Car 2"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div className="relative w-full h-[30vh] md:h-[50vh] lg:h-[75vh]">
             <img
@@ -126,7 +146,7 @@ export default function CarRentalCarousel() {
 
       <div className="  hidden lg:block absolute top-80  md:top-16 md:right-10 bg-black p-4 text-white w-full md:w-96 z-40 rounded">
         <h3 className="text-lg font-bold border-b-2 border-orange pb-2 mb-4">
-          CONTACT US NOW
+          Quick Enquiry
         </h3>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
